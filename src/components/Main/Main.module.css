@@ -1,0 +1,264 @@
+main{
+position: relative;
+display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background{
+    padding-top: 103px;
+    display: flex;
+    justify-content: center;
+    opacity: 0.3;
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    background: url(../../assets/mars.png) 100% 103px/ 100% no-repeat;
+}
+
+
+
+.col_left span{
+    font-size: 70px;
+    text-transform: uppercase;
+    color: white;
+    background: linear-gradient(45deg, rgb(236, 234, 229), rgb(165, 78, 38));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.col_left p{
+    font-size: 20px;
+    color: white;
+    background: linear-gradient(45deg, rgb(236, 234, 229), rgb(165, 78, 38));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.container{
+    position: absolute;
+    top: 0;
+    width: 1200px;
+    margin-top: 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.start{
+    margin-top: 130px;
+}
+
+.start a{
+    text-decoration: none;
+}
+
+.first_row{
+    display: flex;
+    gap: 20px;
+}
+
+
+.first{
+    width: 115px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 5px;
+    color: white;
+}
+
+.first h2{
+    font-size: 50px;
+}
+
+.first:hover{
+    background: linear-gradient(-45deg, rgba(126, 126, 126, 0.3), rgba(255, 255, 255, 0))
+}
+
+.second{
+    width: 115px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 5px;
+    color: white;
+}
+
+.second  h2{
+    font-size: 50px;
+}
+
+.second:hover{
+    background: linear-gradient(45deg, rgba(126, 126, 126, 0.3), rgba(255, 255, 255, 0))
+}
+
+
+.second_row{
+    margin-top: 10px;
+    display: flex;
+    gap: 20px;
+}
+
+.third{
+    width: 115px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 5px;
+    color: white;
+}
+
+.third h2{
+    font-size: 50px;
+}
+
+.third:hover{
+    background: linear-gradient(225deg, rgba(126, 126, 126, 0.3), rgba(255, 255, 255, 0))
+}
+
+.four{
+    width: 115px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 5px;
+    color: white;
+}
+
+.four  h2{
+    font-size: 50px;
+}
+
+.four:hover{
+    background: linear-gradient(135deg, rgba(126, 126, 126, 0.3), rgba(255, 255, 255, 0))
+}
+
+@media(max-width: 1200px){
+    .container{
+        width: 992px;
+        margin-top: 120px;
+    }
+}
+
+@media(max-width: 992px){
+    .container{
+        width: 768px;
+        margin-top: 120px;
+    }
+    .start{
+        margin: 60px;
+    }
+    .col_left span{
+        font-size: 40px;
+    }
+}
+
+@media(max-width: 768px){
+    .background{
+        background: url(../../assets/mars.png) 50% 71px/ 150% no-repeat;
+    }
+    .container{
+        width: 100%;
+        margin-top: 70px;
+        display: block;
+        gap: 60px;
+    }
+    .left{
+        width: 100%;
+        margin-top: 30px;
+        gap: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .col_left span{
+        font-size: 40px;
+    }
+    .start{
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .start img{
+        justify-content: center;
+        align-items: center;
+
+        width: 80%;
+    }
+
+    .right{
+        margin-top: 220px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media(max-width: 576px){
+    .container{
+        margin-top: 120px;
+    }
+    .left{
+        margin-top: 0px;
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .col_left span{
+        font-size: 25px;
+    }
+    .col_left p{
+        font-size: 14px;
+    }
+    .start{
+
+    }
+    .start img{
+        width: 70%;
+    }
+    .right{
+        margin-top: 130px;
+    }
+}
+
+@media(max-width: 400px){
+    .container{
+        margin-top: 80px;
+    }
+    .left{
+        margin-top: 0px;
+        gap: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .col_left span{
+        font-size: 25px;
+    }
+    .col_left p{
+        font-size: 12px;
+    }
+    .start{
+
+    }
+    .start img{
+        width: 60%;
+    }
+    .right{
+        margin-top: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
